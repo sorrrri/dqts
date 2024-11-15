@@ -151,11 +151,9 @@ footer .partners.dark li.logo-cmi {
 }
 
 .content {
-    opacity: 0;
     flex: 1 1 auto;
     overflow-y: auto;
     display: flex;
-    animation: fadeIn .4s forwards;
     transition: .2s border-color;
 }
 
@@ -188,9 +186,6 @@ footer .partners.dark li.logo-cmi {
 }
 
 section[class*="tab-content"] {
-    opacity: 0;
-    display: none;
-    animation: fadeIn .4s forwards;
 }
 
 .information-container {
@@ -229,7 +224,6 @@ section[class*="tab-content"] {
     background: white;
     border-radius: .5rem;
     margin: .5rem 0;
-    animation: fadeIn .8s forwards;
 }
 
 .table .row span {
