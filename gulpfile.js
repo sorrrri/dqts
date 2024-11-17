@@ -3,7 +3,7 @@ const nodemon = require("gulp-nodemon");
 const browserSync = require("browser-sync");
 const del = require("del");
 const autoprefixer = require("gulp-autoprefixer");
-const ghPages = require("gulp-gh-pages");
+const ghPages = require("gh-pages");
 
 const PATH = {
   HTML: "./src",
@@ -98,9 +98,21 @@ gulp.task("watch", () => {
 });
 
 gulp.task("deploy", () => {
-  return gulp
-    .src(["**/*", "!node_modules/**", "!gulpfile.js"]) // 배포할 파일 설정
-    .pipe(ghPages()); // gh-pages 브랜치로 푸시
+  return ghPages.publish(
+    "dist",
+    {
+      // dist 폴더를 배포합니다. 이 폴더는 빌드된 파일이 들어있어야 합니다.
+      branch: "gh-pages", // gh-pages 브랜치로 푸시
+      repo: "https://github.com/sorrrri/dqts.git",
+      user: {
+        name: "sori", // 커밋의 사용자 이름
+        email: "sori.developer@gmail.com", // 커밋의 사용자 이메일
+      },
+    },
+    function (err) {
+      if (err) console.log(err);
+    }
+  );
 });
 
 const series = gulp.series(["clean", "html", "css", "fonts", "images", "script", "library", "nodemon:start", "browserSync", "watch"]);
