@@ -58,29 +58,29 @@ footer .partners li {
 }
 
 footer .partners li.logo-mfds {
-  background-image: url("https://sorrrri.github.io/dashboard-react/images/logo/mfds.png");
+  background-image: url("../images/logo/mfds.png");
 }
 
 footer .partners li.logo-kit {
-  background-image: url("https://sorrrri.github.io/dashboard-react/images/logo/kit.png");
+  background-image: url("../images/logo/kit.png");
 }
 
 footer .partners li.logo-cmi {
-  background-image: url("https://sorrrri.github.io/dashboard-react/images/logo/cmi.png");
+  background-image: url("../images/logo/cmi.png");
   width: 45px;
   background-size: contain;
 }
 
 footer .partners.dark li.logo-mfds {
-  background-image: url("https://sorrrri.github.io/dashboard-react/images/logo/mfds_wh.png");
+  background-image: url("../images/logo/mfds_wh.png");
 }
 
 footer .partners.dark li.logo-kit {
-  background-image: url("https://sorrrri.github.io/dashboard-react/images/logo/kit_wh.png");
+  background-image: url("../images/logo/kit_wh.png");
 }
 
 footer .partners.dark li.logo-cmi {
-  background-image: url("https://sorrrri.github.io/dashboard-react/images/logo/cmi_wh.png");
+  background-image: url("../images/logo/cmi_wh.png");
   width: 45px;
   background-size: contain;
 }

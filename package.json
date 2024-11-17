@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sorrrri/dqts.git"
+    "url": "https://github.com/sorrrri/dqts.git"
   },
   "keywords": [],
   "author": "",
@@ -32,5 +32,8 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-nodemon": "^2.5.0",
     "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "gift": "^0.10.2"
   }
 }
