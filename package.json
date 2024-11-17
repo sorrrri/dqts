@@ -13,15 +13,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coralcat/dqts.git"
+    "url": "git+https://github.com/sorrrri/dqts.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coralcat/dqts/issues"
+    "url": "https://github.com/sorrrri/dqts/issues"
   },
-  "homepage": "https://github.com/coralcat/dqts#readme",
+  "homepage": "https://github.com//sorrrri/dqts",
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
