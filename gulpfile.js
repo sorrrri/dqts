@@ -98,7 +98,9 @@ gulp.task("watch", () => {
 });
 
 gulp.task("deploy", () => {
-  return gulp.src("./dist/**/*").pipe(ghPages());
+  return gulp
+    .src(["**/*", "!node_modules/**", "!gulpfile.js"]) // 배포할 파일 설정
+    .pipe(ghPages()); // gh-pages 브랜치로 푸시
 });
 
 const series = gulp.series(["clean", "html", "css", "fonts", "images", "script", "library", "nodemon:start", "browserSync", "watch"]);
